@@ -41,6 +41,9 @@ The analysis showed that the dataset is relatively well-distributed with no sign
 
 The dataset was then split into training and testing sets to enable proper model evaluation.
 
+<img width="1614" height="1490" alt="image" src="https://github.com/user-attachments/assets/0a99c118-6ccf-44f7-bb38-cb2845c5ab04" />
+
+
 ### **Model Development**
 
 A stepwise modeling approach was adopted to ensure robustness and comparability of results.
