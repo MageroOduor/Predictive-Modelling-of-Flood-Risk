@@ -70,23 +70,30 @@ Most of the original environmental and urban indicator features showed a relativ
 *   The moderate correlations between individual features and the target, and the stronger correlations of the engineered indices, supported the multi-domain approach to flood risk prediction.
 *   The presence of multicollinearity among the engineered indices was noted, especially if using models sensitive to it (like Linear Regression without regularization). Tree-based models are generally more robust to this. This EDA confirms that the engineered features are meaningful and capture significant variance in the target variable.
 
-#### Preprocessing and Feature Engineering
+#### Data Preprocessing and Feature Engineering
 
-Feature engineering transforms raw data into variables that better capture the underlying patterns, helping models make more accurate predictions.
+This step focused on preparing the dataset for modeling by improving feature representation and ensuring consistency in feature scales to enhance model performance.
 
-Based on our EDA insights:
+### 1. Data Preparation
+We:
+1. Removed non-informative columns such as identifiers.
+2. Confirmed that all variables were numerical, so no encoding was required.
+3. Verified data quality (no missing values or duplicates).
+   
+### 2. Feature Engineering
 
-1. Environmental features (e.g., MonsoonIntensity, TopographyDrainage, Deforestation) often showed a weak-to-moderate correlation with flood risk.
-2. Urban features (e.g., Urbanization, DrainageSystems, PopulationScore) showed high variance and interacted with environmental features.
-3. Combining features into indices or interaction terms can capture these complex relationships.
+Based on insights from EDA, where flood risk was influenced by combined environmental and urban effects we:
 
-In this step, we:
+1. Created an Environmental Index by aggregating key environmental variables.
+2. Created an Urban Index by combining urban-related variables.
+3. Developed interaction features to capture combined environmental–urban effects.
 
-- Dropped identifiers and non-predictive columns
-- Createde **Environmental Index** and **Urban Index**
-- Added selected **interaction terms**
-- Scaled features for modeling
-- 
+These transformations were introduced to help models learn joint effects rather than isolated feature impacts.
+
+### 3. Feature Scaling
+
+Since the dataset contains numerical features with varying scales, we applied StandardScaler to normalize all variables. This ensured equal contribution of features during training and improved model stability and performance, particularly for regression models and hyperparameter tuning.
+
 ### **Model Development**
 
 A stepwise modeling approach was adopted to ensure robustness and comparability of results.
