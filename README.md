@@ -70,6 +70,23 @@ Most of the original environmental and urban indicator features showed a relativ
 *   The moderate correlations between individual features and the target, and the stronger correlations of the engineered indices, supported the multi-domain approach to flood risk prediction.
 *   The presence of multicollinearity among the engineered indices was noted, especially if using models sensitive to it (like Linear Regression without regularization). Tree-based models are generally more robust to this. This EDA confirms that the engineered features are meaningful and capture significant variance in the target variable.
 
+#### Preprocessing and Feature Engineering
+
+Feature engineering transforms raw data into variables that better capture the underlying patterns, helping models make more accurate predictions.
+
+Based on our EDA insights:
+
+1. Environmental features (e.g., MonsoonIntensity, TopographyDrainage, Deforestation) often showed a weak-to-moderate correlation with flood risk.
+2. Urban features (e.g., Urbanization, DrainageSystems, PopulationScore) showed high variance and interacted with environmental features.
+3. Combining features into indices or interaction terms can capture these complex relationships.
+
+In this step, we:
+
+- Dropped identifiers and non-predictive columns
+- Createde **Environmental Index** and **Urban Index**
+- Added selected **interaction terms**
+- Scaled features for modeling
+- 
 ### **Model Development**
 
 A stepwise modeling approach was adopted to ensure robustness and comparability of results.
