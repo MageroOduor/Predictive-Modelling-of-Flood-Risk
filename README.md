@@ -10,7 +10,15 @@ To develop, evaluate, and interpret an accurate machine learning model capable o
 
 **Specific Objectives**
 
-1. Data Exploration and Understanding: Conduct comprehensive Exploratory Data Analysis (EDA) to understand feature distributions, identify correlations, and detect potential anomalies in the synthetic dataset.
-2. Feature Engineering and Preprocessing: Create meaningful composite features (e.g., environmental and urban indices, interaction terms, polynomial features) and preprocess the data (e.g., scaling) to optimize it for machine learning models.
-3. Model Development and Evaluation: Build and evaluate multiple machine learning models (e.g., Linear Regression, Random Forest, XGBoost) to predict flood probability, comparing their performance using metrics like RMSE and R-squared.
-4. Model Interpretation and Insights: Interpret the best-performing model's outputs and feature importances to identify the most influential predictors of flood risk and discuss the implications of the findings.
+1. Conduct comprehensive Exploratory Data Analysis (EDA) to understand feature distributions, identify correlations, and detect potential anomalies in the synthetic dataset.
+2. Create meaningful composite features (e.g., environmental and urban indices, interaction terms, polynomial features) and preprocess the data (e.g., scaling) to optimize it for machine learning models.
+3. Build and evaluate multiple machine learning models (e.g., Linear Regression, Random Forest, XGBoost) to predict flood probability, comparing their performance using metrics like RMSE and R-squared.
+4. Interpret the best-performing model's outputs and feature importances to identify the most influential predictors of flood risk and discuss the implications of the findings.
+
+**Significance of the Project**
+
+This project demonstrates the practical value of machine learning in addressing real-world flood risks by: 
+1. Providing a reliable, data-driven approach to predicting flood risk in rapidly growing urban areas;
+2. Supporting better urban planning by identifying high-risk areas and guiding infrastructure decisions.
+3. Enhancing disaster preparedness through early risk detection and improved response planning.
+4. Contributing to reducing socio-economic losses by enabling targeted and efficient resource allocation.
