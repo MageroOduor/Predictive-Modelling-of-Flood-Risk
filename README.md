@@ -41,6 +41,15 @@ The analysis showed that the dataset is relatively well-distributed with no sign
 
 The dataset was then split into training and testing sets to enable proper model evaluation.
 
+**Feature Relationships with Flood Probability**
+We explored how individual features relate to the target variable, FloodProbability by visualizing distributions for all numerical features in the train DataFrame, excluding the id and FloodProbability columns, to understand their individual distributions. We ensured the plots are well-organized using subplots. and created a correlation matrix by displaying it as a heatmap to identify relationships between variables.
+
+Understanding these relationships helped us to:
+
+Identify the most influential predictors
+Detect linear or non-linear trends
+Guide feature engineering decisions
+
 <img width="1614" height="1490" alt="image" src="https://github.com/user-attachments/assets/0a99c118-6ccf-44f7-bb38-cb2845c5ab04" />
 
 
