@@ -27,7 +27,7 @@ This project demonstrates the practical value of machine learning in addressing 
 
 ### **Data Source and Understanding**
 
-The dataset used in this project was sourced from Kaggle under the *“Forecasting Flood Levels: Unlocking Regression Advancements”* competition. It consists of three files: training data (1,117,957 records, 22 variables), testing data (745,305 records, 21 variables), and a sample submission file.
+The dataset used in this project was sourced from Kaggle under the “Forecasting Flood Levels: Unlocking Regression Advancements” competition. The data was pre-split into training and testing sets, with the training dataset containing 1,117,957 records and 22 variables, and the testing dataset containing 745,305 records and 21 variables.
 
 The dataset is entirely numerical and captures multiple environmental, infrastructural, and socio-economic factors influencing flood risk. Key predictor variables include *Monsoon Intensity, Topography Drainage, River Management, Deforestation, Urbanization, Climate Change, Drainage Systems, Coastal Vulnerability,* and *Wetland Loss*, among others. The target variable is *Flood Probability*, which represents the likelihood of flooding on a continuous scale.
 
