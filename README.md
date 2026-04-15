@@ -50,6 +50,8 @@ We explored how individual features relate to the target variable, FloodProbabil
 
 <img width="1672" height="1664" alt="image" src="https://github.com/user-attachments/assets/2bd73cf2-2408-4ea6-846a-62f9acc6a481" />
 
+<img width="1070" height="1004" alt="image" src="https://github.com/user-attachments/assets/f4de841b-d6b0-4b6c-91a4-8b857fd3e466" />
+
 ## Summary of EDA
 
 #### Feature Distributions (Histograms):
