@@ -25,7 +25,7 @@ This project demonstrates the practical value of machine learning in addressing 
 
 ## **Methodology**
 
-### **Data Source and Understanding**
+## **Data Source and Understanding**
 
 The dataset used in this project was sourced from Kaggle under the “Forecasting Flood Levels: Unlocking Regression Advancements” competition. The data was pre-split into training and testing sets, with the training dataset containing 1,117,957 records and 22 variables, and the testing dataset containing 745,305 records and 21 variables.
 
@@ -33,7 +33,7 @@ The dataset is entirely numerical and captures multiple environmental, infrastru
 
 Initial data checks confirmed that there were **no missing values or duplicate records**, making the dataset suitable for direct modeling.
 
-### **Exploratory Data Analysis and Preprocessing**
+## **Exploratory Data Analysis and Preprocessing**
 
 Exploratory Data Analysis (EDA) was conducted to understand the distribution, variability, and relationships among variables. Summary statistics such as mean, minimum, maximum, and standard deviation were computed, while visualizations including histograms were used to assess data distribution and detect anomalies.
 
@@ -41,7 +41,7 @@ The analysis showed that the dataset is relatively well-distributed with no sign
 
 The dataset was then split into training and testing sets to enable proper model evaluation.
 
-**Feature Relationships with Flood Probability**
+### **Feature Relationships with Flood Probability**
 
 We explored how individual features relate to the target variable, FloodProbability by visualizing distributions for all numerical features in the train DataFrame, excluding the id and FloodProbability columns, to understand their individual distributions. We ensured the plots are well-organized using subplots and created a correlation matrix by displaying it as a heatmap to identify relationships between variables.
 
