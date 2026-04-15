@@ -33,7 +33,7 @@ The dataset is entirely numerical and captures multiple environmental, infrastru
 
 Initial data checks confirmed that there were **no missing values or duplicate records**, making the dataset suitable for direct modeling.
 
-## **Exploratory Data Analysis and Preprocessing**
+## **Exploratory Data Analysis(EDA) and Preprocessing**
 
 Exploratory Data Analysis (EDA) was conducted to understand the distribution, variability, and relationships among variables. Summary statistics such as mean, minimum, maximum, and standard deviation were computed, while visualizations including histograms were used to assess data distribution and detect anomalies.
 
@@ -50,7 +50,7 @@ We explored how individual features relate to the target variable, FloodProbabil
 
 <img width="1672" height="1664" alt="image" src="https://github.com/user-attachments/assets/2bd73cf2-2408-4ea6-846a-62f9acc6a481" />
 
-### Summary of EDA
+## Summary of EDA
 
 #### Feature Distributions (Histograms):
 Most of the original environmental and urban indicator features show a relatively uniform or slightly skewed distribution across their discrete values (typically 1-10). This indicates that the dataset is synthetic and likely generated to cover a range of scenarios for each indicator. There are no immediate outliers or extremely sparse categories that would require special handling, aside from the general discrete nature of these features.
