@@ -53,7 +53,7 @@ We explored how individual features relate to the target variable, FloodProbabil
 ## Summary of EDA
 
 #### Feature Distributions (Histograms):
-Most of the original environmental and urban indicator features show a relatively uniform or slightly skewed distribution across their discrete values (typically 1-10). This indicates that the dataset is synthetic and likely generated to cover a range of scenarios for each indicator. There are no immediate outliers or extremely sparse categories that would require special handling, aside from the general discrete nature of these features.
+Most of the original environmental and urban indicator features showed relatively uniform or slightly skewed distributions across their discrete range (typically 1–10). This reflects the bounded and ordinal nature of the variables, which are designed to capture varying intensity levels across environmental and urban conditions. The distribution pattern indicates broad coverage of possible scenarios, with no extreme sparsity or outlier-driven distortions observed.
 
 #### Correlation Matrix Analysis
 
