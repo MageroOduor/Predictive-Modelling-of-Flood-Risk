@@ -60,3 +60,8 @@ Model performance was evaluated using **Root Mean Squared Error (RMSE)** as the 
 
 Lower RMSE values indicate better model performance. The models were compared based on their RMSE scores on the test dataset, and the best-performing model was selected for final predictions and analysis.
 
+### **Model Deployment**
+
+To enhance usability and practical application, the final model was deployed using Streamlit, an interactive web application framework.
+
+A user-friendly interface was developed to allow users to input relevant environmental and infrastructural variables and obtain real-time flood probability predictions. This deployment demonstrates the practical applicability of the model and enables non-technical users, such as planners and decision-makers, to easily interact with the system.
