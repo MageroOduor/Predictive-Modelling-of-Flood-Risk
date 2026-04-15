@@ -42,19 +42,32 @@ The analysis showed that the dataset is relatively well-distributed with no sign
 The dataset was then split into training and testing sets to enable proper model evaluation.
 
 **Feature Relationships with Flood Probability**
-We explored how individual features relate to the target variable, FloodProbability by visualizing distributions for all numerical features in the train DataFrame, excluding the id and FloodProbability columns, to understand their individual distributions. We ensured the plots are well-organized using subplots. and created a correlation matrix by displaying it as a heatmap to identify relationships between variables.
-
-Understanding these relationships helped us to:
-
-Identify the most influential predictors
-Detect linear or non-linear trends
-Guide feature engineering decisions
+We explored how individual features relate to the target variable, FloodProbability by visualizing distributions for all numerical features in the train DataFrame, excluding the id and FloodProbability columns, to understand their individual distributions. We ensured the plots are well-organized using subplots and created a correlation matrix by displaying it as a heatmap to identify relationships between variables.
 
 <img width="1614" height="1490" alt="image" src="https://github.com/user-attachments/assets/0a99c118-6ccf-44f7-bb38-cb2845c5ab04" />
 
 
 <img width="1672" height="1664" alt="image" src="https://github.com/user-attachments/assets/2bd73cf2-2408-4ea6-846a-62f9acc6a481" />
 
+### Summary of EDA
+
+#### Feature Distributions (Histograms):
+Most of the original environmental and urban indicator features show a relatively uniform or slightly skewed distribution across their discrete values (typically 1-10). This indicates that the dataset is synthetic and likely generated to cover a range of scenarios for each indicator. There are no immediate outliers or extremely sparse categories that would require special handling, aside from the general discrete nature of these features.
+
+#### Correlation Matrix Analysis:
+1.  **Target Variable (`FloodProbability`) Correlations:**
+    *   `FloodProbability` shows moderate positive correlations with several features, notably `MonsoonIntensity` (0.19), `TopographyDrainage` (0.18), `ClimateChange` (0.19), and `DeterioratingInfrastructure` (0.19). This confirms the expected influence of these factors on flood risk.
+    *   The engineered features `EnvironmentalIndex`, `UrbanIndex`, and `Env_Urban_Interaction` show stronger correlations with `FloodProbability` (0.42, 0.44, and 0.48 respectively) compared to individual raw features. This suggests that combining these related factors into indices effectively captures their collective impact on flood risk, validating our feature engineering approach.
+
+2.  **Inter-Feature Correlations (Multicollinearity):**
+    *   Many individual environmental features (e.g., `MonsoonIntensity`, `TopographyDrainage`, `Deforestation`, `ClimateChange`, `Siltation`, `Watersheds`, `WetlandLoss`, `Landslides`) show low to moderate positive correlations among themselves. This is expected as environmental factors can be interconnected.
+    *   Similarly, urban features (e.g., `Urbanization`, `DamsQuality`, `AgriculturalPractices`, `Encroachments`, `IneffectiveDisasterPreparedness`, `DrainageSystems`, `CoastalVulnerability`, `DeterioratingInfrastructure`, `PopulationScore`, `InadequatePlanning`, `PoliticalFactors`) also exhibit low to moderate positive correlations with each other.
+    *   **The engineered indices themselves, `EnvironmentalIndex` and `UrbanIndex`, show a strong positive correlation (0.75).** This indicates significant overlap or interdependence between overall environmental and urban conditions in influencing flood risk, which is captured and amplified by the `Env_Urban_Interaction` term. This strong correlation between the two main indices might lead to multicollinearity issues in simple linear models but is often handled well by tree-based models like Random Forest. The `Env_Urban_Interaction` term, as expected, also has strong correlations with both `EnvironmentalIndex` (0.97) and `UrbanIndex` (0.95), further reinforcing its role as a combined effect.
+
+**Key Takeaways for Modeling:**
+*   The engineered features, especially `Env_Urban_Interaction`, appear to be highly predictive of `FloodProbability`, which is a positive outcome of our feature engineering step.
+*   The moderate correlations between individual features and the target, and the stronger correlations of the engineered indices, support the multi-domain approach to flood risk prediction.
+*   The presence of multicollinearity among the engineered indices should be noted, especially if using models sensitive to it (like Linear Regression without regularization). Tree-based models are generally more robust to this. This EDA confirms that the engineered features are meaningful and capture significant variance in the target variable.
 
 ### **Model Development**
 
