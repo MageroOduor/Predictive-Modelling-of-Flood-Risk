@@ -53,7 +53,7 @@ We explored how individual features relate to the target variable, FloodProbabil
 ## Summary of EDA
 
 #### Feature Distributions (Histograms):
-Most of the features are fairly evenly distributed between 1 and 10, with no extreme values, missing data issues, or unusual patterns. This means there is no need for additional preprocessing steps such as outlier removal, imputation, or data transformation before modeling.
+Most of the features are fairly evenly distributed between 1 and 10, with no extreme values, missing data issues, or unusual patterns. This means there was no need for additional preprocessing steps such as outlier removal, imputation, or data transformation before modeling.
 
 #### Correlation Matrix Analysis
 
