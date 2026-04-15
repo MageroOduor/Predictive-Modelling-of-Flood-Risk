@@ -57,7 +57,7 @@ Most of the original environmental and urban indicator features showed a relativ
 
 #### Correlation Matrix Analysis:
 1.  **Target Variable (`FloodProbability`) Correlations:**
-    *   `FloodProbability` showed moderate positive correlations with several features, notably `MonsoonIntensity` (0.19), `TopographyDrainage` (0.18), `ClimateChange` (0.19), and `DeterioratingInfrastructure` (0.19). This confirms the expected influence of these factors on flood risk.
+    *   `FloodProbability` showed moderate positive correlations with several features, notably `MonsoonIntensity` (0.19), `TopographyDrainage` (0.19), `ClimateChange` (0.19), and `DeterioratingInfrastructure` (0.19). This confirms the expected influence of these factors on flood risk.
     *   The engineered features `EnvironmentalIndex`, `UrbanIndex`, and `Env_Urban_Interaction` showed stronger correlations with `FloodProbability` (0.42, 0.44, and 0.48 respectively) compared to individual raw features. This suggests that combining these related factors into indices effectively captures their collective impact on flood risk, validating our feature engineering approach.
 
 2.  **Inter-Feature Correlations (Multicollinearity):**
