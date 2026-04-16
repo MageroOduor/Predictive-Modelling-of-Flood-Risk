@@ -49,7 +49,7 @@ This analysis primarily focuses on predictive performance and interpretability. 
 
 ## **Data Source and Understanding**
 
-The dataset used in this project was sourced from Kaggle under the “Forecasting Flood Levels: Unlocking Regression Advancements” competition. The data was pre-split into training and testing sets, with the training dataset containing 1,117,957 records and 22 variables, and the testing dataset containing 745,305 records and 21 variables.
+The dataset used in this project was sourced from Kaggle https://www.kaggle.com/code/marianadeem755/forecasting-flood-unlocking-regression-advancement?scriptVersionId=179074936&cellId=3. The data was pre-split into training and testing sets, with the training dataset containing 1,117,957 records and 22 variables, and the testing dataset containing 745,305 records and 21 variables.
 
 The dataset is entirely numerical and captures multiple environmental, infrastructural, and socio-economic factors influencing flood risk. Key predictor variables include *Monsoon Intensity, Topography Drainage, River Management, Deforestation, Urbanization, Climate Change, Drainage Systems, Coastal Vulnerability,* and *Wetland Loss*, among others. The target variable is *Flood Probability*, which represents the likelihood of flooding on a continuous scale.
 
