@@ -63,7 +63,9 @@ The analysis showed that the dataset is relatively well-distributed with no sign
 
 The dataset was then split into training and testing sets to enable proper model evaluation.
 
-https://colab.research.google.com/drive/1KyiGp7XlHYh841BERXwH1AcmJksmjsKD#scrollTo=amuGHlNTISdo&line=1&uniqifier=1
+# Viewing a sample of rows
+display(train_df.sample(frac=0.01)) # Print 1% of the data randomly
+display(test_df.sample(frac=0.01))
 
 ### **Feature Relationships with Flood Probability**
 
